@@ -15,4 +15,4 @@ apscheduler
 python-dotenv
 Flask==2.2.2
 gunicorn==20.1.0
-node==20.3.0
+node==0.9.28
