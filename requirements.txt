@@ -13,3 +13,4 @@ dnspython
 pytz
 apscheduler
 python-dotenv
+node==20.3.0
