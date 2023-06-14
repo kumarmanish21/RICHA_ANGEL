@@ -11,3 +11,10 @@ cd /VCPlayerBot
 pip3 install -U -r requirements.txt
 echo "Starting Bot...."
 python3 main.py
+git clone https://github.com/subinps/VCPlayerBot
+cd VCPlayerBot
+pip3 install -r requirements.txt
+# install node js
+sudo bash install_node.sh
+# <Create Variables appropriately (.env [optional])>
+python3 main.py
