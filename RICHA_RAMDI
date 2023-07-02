@@ -7,6 +7,6 @@ COPY requirements.txt /requirements.txt
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
 RUN mkdir /RICHA_ANGEL
-WORKDIR /VCPlayerBot
+WORKDIR /RICHA_ANGEL
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
