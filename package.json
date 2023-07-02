@@ -1,30 +1,41 @@
 {
-    "name": "tgcalls",
-    "version": "0.1.8",
-    "description": "",
-    "main": "dist",
-    "scripts": {
-        "build": "npx tsc",
-        "test": "npx tsc --noEmit",
-        "prepare": "npm run build",
-        "preversion": "npm run test"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/tgcallsjs/tgcalls.git"
-    },
-    "author": "Andrew Lane <contact@lungers.com>",
-    "license": "LGPL-3.0",
-    "bugs": {
-        "url": "https://github.com/tgcallsjs/tgcalls/issues"
-    },
-    "homepage": "https://github.com/tgcallsjs/tgcalls#readme",
-    "devDependencies": {
-        "@types/node": "^18.0.6",
-        "typescript": "^4.7.4"
-    },
-    "dependencies": {
-        "@mapbox/node-pre-gyp": "^1.0.9",
-        "wrtc": "^0.4.7"
-    }
+  "author": "Roj <ez@roj.im>",
+  "license": "AGPL-3.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">17.x"
+  },
+  "scripts": {
+    "start": "node dist",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "tsc --noEmit",
+    "prettier": "prettier run --write **"
+  },
+  "dependencies": {
+    "@moebius/fluent": "^1.1.0",
+    "@moebius/grammy-fluent": "^0.4.1",
+    "dotenv": "^16.0.2",
+    "envalid": "^7.3.1",
+    "escape-html": "^1.0.3",
+    "fluent-ffmpeg": "^2.1.2",
+    "got": "^12.5.0",
+    "grammy": "^1.11.1",
+    "lyrics-searcher": "^1.0.58",
+    "telegram": "^2.11.7",
+    "tgcalls-next": "^0.0.0-rc.18",
+    "ytdl-core": "^4.11.2",
+    "ytpl": "^2.3.0",
+    "ytsr": "^3.8.0"
+  },
+  "devDependencies": {
+    "@grammyjs/types": "^2.9.1",
+    "@types/escape-html": "^1.0.2",
+    "@types/fluent-ffmpeg": "^2.1.20",
+    "@types/node": "^18.7.19",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.3"
+  }
 }
