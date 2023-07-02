@@ -1,0 +1,18 @@
+{
+  "name": "node-js-getting-started",
+  "version": "0.3.0",
+  ...
+  "engines": {
+    "node": "18.x || 16.x"
+  },
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.15.2"
+  },
+  ...
+}
+$ node --version
+v18.7.0
+heroku buildpacks
+=== issuetriage Buildpack URLs
+1. heroku/nodejs
